@@ -1,0 +1,76 @@
+- title: General Information
+  type: map
+  contents:
+  - name: Full Name
+    value: Lei Xiong
+  - name: Contact
+    value: jsxlei [at] gmail [dot] com
+  - name: Languages
+    value: Chinese (native), English (fluent)
+
+- title: Research Areas
+  type: list
+  contents:
+  - My PhD research focuses on developing artificial intelligence tool for analysis of single-cell RNA-seq and ATAC-seq data to uncover gene regulation in cell heterogeneity. In my PhD dissertation, “Artificial intelligence method for single-cell ATAC-seq data via feature extraction”, I studied analysis methods for uncovering the regulatory variations across various cell types observed from high-dimensional and sparse single-cell ATAC-seq data. 
+  - I am also passionate about applying network analysis methods. Previously, I did some research in structural-protein-protein interaction (PPI) network to find out structural modules enriching cancer mutations and drug targets.
+  
+- title: Education
+  type: table
+  contents:
+  - title: Tsinghua University – Ph.D. in Computational Biology
+    year: 2015 - 2020
+    location: China
+    description:
+    - 'Advised by <a href="http://life.tsinghua.edu.cn/lifeen/info/1034/1075.htm" target="_blank"><b>Prof. Qiangfeng Cliff Zhang</b></a>'
+    - 'Thesis: Artificial intelligence method for single-cell ATAC-seq data via feature extraction'
+  - title: University of Science and Technology of China – B.S. in Biology
+    year: 2011 - 2015
+    location: China
+    description:
+    - 'Advised by <a href="https://molbio.princeton.edu/people/nieng-yan" target="_blank"><b>Prof. Nieng Yan</b></a>'
+    - 'Thesis: Structure basis and transport mechanism of membrane protein GLUT3'
+    - 'Determine the structure of human GLUT3 in complex with D-glucose at 1.5 Å resolution in an outward-occluded conformation and provided insights into the alternating access cycle for GLUTS. I was responsible for comparison of glucose uptake efficiency among different mutated proteins. I cloned over 200 plasmids of different point mutations, constructed the bacmids and expressed in insect cells, purified the proteins and assayed their glucose transporting efficiency.'
+
+- title: Other Research Experience
+  type: table
+  contents:
+
+  - title: 'Research for Undergraduates Program'
+    year: 2013 - 2014
+    location: China
+    description:
+    - 'University of Science and Technology of China'
+    - 'Advised by <a href="https://sites.google.com/site/mariusleordeanu/home" target="_blank"><b>Prof. Jianye Zang</b></a>'
+    - 'Structure and function research of ubiquitin ligase TRAIP (TRAF-interacting protein) including molecular clone, protein expression and purification, pull down, inclusion body denaturation and renaturation experiments.'
+  - title: '2013 USTC-China iGEM Team'
+    year: 2012 - 2013
+    location: China
+    description:
+    - 'University of Science and Technology of China'
+    - 'In Situ Transdermal Vaccine. We constructed a macromolecule transdermal delivery system with the support of TD-1 polypeptide in Bacillus subtilis. We also designed a reporter system and a kill switch for usability and biosafety.'
+  note: '<b>Note:</b> for further details on my research, please see the <a href="/publications/" target="_blank"><b>publications</b></a> page.'
+
+- title: Honors and Awards
+  type: table
+  contents:
+  - year: Fellowships
+    items:
+    - '<a href="http://www.icsb.tsinghua.edu.cn" target="_blank"><b>Outstanding Fellowship of the Beijing Advanced Innovation Center of Structure Biology at Tsinghua University</b></a> (2019)'
+    - '<a href="http://www.icsb.tsinghua.edu.cn" target="_blank"><b>Innovation Fellowship of the Beijing Advanced Innovation Center of Structural Biology at Tsinghua University</b></a> (2016)'
+  - year: Scholarships
+    items:
+    - 'Student Scholarship (2011-2013)'
+  - year: Awards
+    items:
+    - '<a href="http://gpb.big.ac.cn/news/1010" target="_blank"><b>Top Ten Advances in Bioinformatics in China in 2019</b></a> (2020)'
+    - '<a href="http://gpb.big.ac.cn/news/1008" target="_blank"><b>Top Ten Algorithms and Tools for Bioinformatics in China in 2019</b></a> (2020)'
+    - 'International Genetically Engineered Machine Competition (iGEM): Gold Medal (2013)'
+    
+- title: Skills
+  type: list
+  contents:
+  - '○ Designing artificial intelligence algorithm for biological problems'
+  - '○ Biological data mining'  
+  - '○ Single-cell analysis'
+  - '○ Network analysis'
+  - '○ Frameworks: Pytorch, Tensorflow, NumPy, SciPy, Pandas.'
