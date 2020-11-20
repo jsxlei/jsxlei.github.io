@@ -2,7 +2,7 @@
 layout: page
 title: SCALE
 description: SCALE method for single-cell ATAC-seq analysis via latent feature extraction
-code: https://github.com/jsxlei/SCALE
+github: https://github.com/jsxlei/SCALE
 img: /assets/img/scale.jpg
 ---
 

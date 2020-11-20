@@ -18,7 +18,7 @@ description: some of the softwares I have developed
         <div class="card">
           <img class="card-img-top" src="{{ project.img | prepend: site.baseurl | prepend: site.url }}" alt="project thumbnail">
           <div class="card-body">
-            <h5 class="card-title text-lowercase">{{ project.title }}</h5>
+            <h5 class="card-title">{{ project.title }}</h5>
             <p class="card-text">{{ project.description }}</p>
             <div class="row ml-1 mr-1 p-0">
               {% if project.wordpress %}

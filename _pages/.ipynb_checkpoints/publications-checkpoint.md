@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: publications
 nav: publications
-description: <nobr><em>*</em></nobr> denotes equal contribution and joint lead authorship.
+description: <nobr><em>*</em></nobr> for equal authorship, <nobr><em>#</em></nobr> for corresponding authorship.
 years: [2020, 2019, 2015]
 ---
 

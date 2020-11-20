@@ -142,7 +142,7 @@ progress {
 
   .github-icon {
     @include mt(2);
-    @include mb(-4);
+    @include mb(-2);
     @include ml(-1);
     @include mr(2);
     @include p(0);
@@ -169,7 +169,7 @@ progress {
   padding: 0em;
 
   .abbr span {
-    width: 65px;
+    width: 80px;
   }
 
   li {

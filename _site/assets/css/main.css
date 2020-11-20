@@ -11225,7 +11225,7 @@ progress { position: fixed; left: 0; top: 56px; z-index: 10; width: 100%; height
 .project-card .card:hover { box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); transition: all 0.2s ease-in-out; }
 .project-card .wordpress-icon { display: block; font-size: 40px; margin-bottom: -0.3em; margin-top: 0.5rem; margin-left: -0.25rem; margin-right: 0.5rem; padding: 0; }
 .project-card .wordpress-icon .icon { margin-right: 0.25rem; }
-.project-card .github-icon { margin-top: 0.5rem; margin-bottom: -1.5rem; margin-left: -0.25rem; margin-right: 0.5rem; padding: 0; }
+.project-card .github-icon { margin-top: 0.5rem; margin-bottom: -0.5rem; margin-left: -0.25rem; margin-right: 0.5rem; padding: 0; }
 .project-card .github-icon .icon { display: block; font-size: 40px; margin-bottom: -0.3em; margin-right: 0.25rem; }
 .project-card .github-icon .stars { display: inline-block; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; background-color: #7cb342 !important; color: #fff !important; position: relative; top: -50px; left: 20px; }
 @media (prefers-reduced-motion: reduce) { .project-card .github-icon .stars { transition: none; } }
@@ -11234,7 +11234,7 @@ a.project-card .github-icon .stars:hover, a.project-card .github-icon .stars:foc
 
 /* Publications */
 .bibliography { padding: 0em; }
-.bibliography .abbr span { width: 65px; }
+.bibliography .abbr span { width: 80px; }
 .bibliography li { list-style: none; }
 .bibliography li .author { font-size: 14px; }
 .bibliography li .periodical { font-size: 14px; line-height: 1.2em; margin-bottom: 5px; }
