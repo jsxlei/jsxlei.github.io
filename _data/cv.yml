@@ -5,8 +5,6 @@
     value: Lei Xiong
   - name: Contact
     value: jsxlei [at] gmail [dot] com
-  - name: Languages
-    value: Chinese (native), English (fluent)
 
 - title: Research Areas
   type: list
@@ -29,7 +27,6 @@
     description:
     - 'Advised by <a href="https://molbio.princeton.edu/people/nieng-yan" target="_blank"><b>Prof. Nieng Yan</b></a>'
     - 'Thesis: Structure basis and transport mechanism of membrane protein GLUT3'
-    - 'Determine the structure of human GLUT3 in complex with D-glucose at 1.5 Å resolution in an outward-occluded conformation and provided insights into the alternating access cycle for GLUTS. I was responsible for comparison of glucose uptake efficiency among different mutated proteins. I cloned over 200 plasmids of different point mutations, constructed the bacmids and expressed in insect cells, purified the proteins and assayed their glucose transporting efficiency.'
 
 - title: Other Research Experience
   type: table

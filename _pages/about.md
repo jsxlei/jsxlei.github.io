@@ -24,7 +24,7 @@ address: <a href="https://www.google.com/maps/place/Biology+Building+of+Hall/@40
         </div>
 
         <p>
-            I recieved my Ph.D. in Bioinformatics at <a href="http://www.tsinghua.edu.cn/" target="_blank">Tsinghua University</a> advised by <a href="http://life.tsinghua.edu.cn/lifeen/info/1034/1075.htm" target="_blank">Prof. Qiangfeng Cliff Zhang</a>. 
+            I recieved my Ph.D. in Computational at <a href="http://www.tsinghua.edu.cn/" target="_blank">Tsinghua University</a> advised by <a href="http://life.tsinghua.edu.cn/lifeen/info/1034/1075.htm" target="_blank">Prof. Qiangfeng Cliff Zhang</a>. 
         </p>
         
         <p>
@@ -56,4 +56,10 @@ address: <a href="https://www.google.com/maps/place/Biology+Building+of+Hall/@40
       </div>
     </div>
   {% endfor %}
+</div>
+
+<!-- Selected publications -->
+<div class="news mt-3 p-0">
+  <h1 class="title mb-4 p-0">selected publications</h1>
+  {% bibliography -f papers -q @*[selected=true]* %}
 </div>

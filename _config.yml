@@ -19,7 +19,7 @@ baseurl:  # the subpath of your site, e.g. /blog/
 scholar_userid: ky6bUTgAAAAJ&hl
 github_username: jsxlei
 orcid_id: http://orcid.org/0000-0002-2392-114X
-linkedin_username: 
+linkedin_username: lei-xiong-6776a410b
 facebook_username: jsxlei
 twitter_username: jsxlei
 contact_note: Feel free to drop me a line via e-mail.
@@ -30,21 +30,22 @@ contact_note: Feel free to drop me a line via e-mail.
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-# blog_name: al-folio
-# blog_description: a simple whitespace theme for academics
+blog_name: jsxlei
+blog_description: a few stories to share 
 
 # # Pagination
 # paginate: 4
-# permalink: /blog/:year/:title/
+permalink: /blog/:year/:title/
 # paginate_path: /blog/page:num/
 
 # text:
-#   pagination:
+# pagination:
+#   enabled: true
 #     newer: 'Newer'
 #     older: 'Older'
 
-# # Comments
-# disqus_shortname: al-folio # put your disqus shortname
+# Comments
+disqus_shortname: jsxlei # put your disqus shortname
 
 # # Optional features
 # show_social_icons:  false
