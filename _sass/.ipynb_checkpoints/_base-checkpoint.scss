@@ -274,6 +274,43 @@ progress::-moz-progress-bar {
     background-color: $theme-color;
 }
 
+
+.post-list {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  li {
+    border-bottom: 1px solid $grey-color-light;
+    list-style: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    .post-meta {
+      color: $grey-color;
+      font-size: 0.875rem;
+      margin-bottom: 0;
+    }
+    a {
+      color: var($theme-color);
+      text-decoration: none;
+      &:hover {
+        color: var($theme-color);
+      }
+    }
+  }
+}
+
+.post-description {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  a {
+    color: inherit;
+    &:hover {
+      color: var($theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
 // Publications
 
 .bibliography-year {

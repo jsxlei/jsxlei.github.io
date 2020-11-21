@@ -11187,6 +11187,16 @@ progress::-moz-progress-bar { background-color: #7cb342; }
 
 .progress-bar { background-color: #7cb342; }
 
+.post-list { margin: 0; margin-bottom: 30px; padding: 0; }
+.post-list li { border-bottom: 1px solid #ddd; list-style: none; padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.post-list li .post-meta { color: #828282; font-size: 0.875rem; margin-bottom: 0; }
+.post-list li a { color: var(#7cb342); text-decoration: none; }
+.post-list li a:hover { color: var(#7cb342); }
+
+.post-description { margin-bottom: 0.5rem; font-size: 0.875rem; }
+.post-description a { color: inherit; }
+.post-description a:hover { color: var(#7cb342); text-decoration: none; }
+
 .bibliography-year { color: #ddd; text-align: right; float: right; }
 
 .bibliography li .title { font-weight: bolder; }
@@ -14147,6 +14157,16 @@ progress::-moz-progress-bar { background-color: #7cb342; }
 .progress-container { background-color: transparent; }
 
 .progress-bar { background-color: #7cb342; }
+
+.post-list { margin: 0; margin-bottom: 30px; padding: 0; }
+.post-list li { border-bottom: 1px solid #ddd; list-style: none; padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.post-list li .post-meta { color: #828282; font-size: 0.875rem; margin-bottom: 0; }
+.post-list li a { color: var(#7cb342); text-decoration: none; }
+.post-list li a:hover { color: var(#7cb342); }
+
+.post-description { margin-bottom: 0.5rem; font-size: 0.875rem; }
+.post-description a { color: inherit; }
+.post-description a:hover { color: var(#7cb342); text-decoration: none; }
 
 .bibliography-year { color: #ddd; text-align: right; float: right; }
 

@@ -30,12 +30,12 @@ contact_note: Feel free to drop me a line via e-mail.
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-blog_name: jsxlei
-blog_description: a few stories to share 
+# blog_name: jsxlei
+# blog_description: a few stories to share 
 
 # # Pagination
 # paginate: 4
-permalink: /blog/:year/:title/
+# permalink: /posts/:year/:title/
 # paginate_path: /blog/page:num/
 
 # text:
@@ -45,7 +45,7 @@ permalink: /blog/:year/:title/
 #     older: 'Older'
 
 # Comments
-disqus_shortname: jsxlei # put your disqus shortname
+# disqus_shortname: jsxlei # put your disqus shortname
 
 # # Optional features
 # show_social_icons:  false
