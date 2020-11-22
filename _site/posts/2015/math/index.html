@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Lei Xiong | a post with code</title>
+  <title>Lei Xiong | a post with math</title>
   <meta name="description" content="">
 
   <!-- Fonts and Icons -->
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="http://localhost:4000/assets/css/all.min.css">
   <link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.min.css">
   <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/2015/07/15/code.html">
+  <link rel="canonical" href="http://localhost:4000/posts/2015/math/">
 </head>
 <body>
   <!-- Header -->
@@ -96,56 +96,18 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">a post with code</h1>
-    <p class="post-meta">July 15, 2015</p>
+    <h1 class="post-title">a post with math</h1>
+    <p class="post-meta">October 20, 2015</p>
   </header>
 
   <article class="post-content">
-    <p>This theme implements a built-in Jekyll feature, the use of Rouge, for syntax highlighting.
-It supports more than 100 languages.
-This example is in C++.
-All you have to do is wrap your code in a liquid tag:</p>
+    <p>This theme supports rendering beautiful math in inline and display modes using <a href="https://www.mathjax.org/" target="\_blank">MathJax 3</a> engine. You just need to surround your math expression with <code class="highlighter-rouge">$$</code>, like <code class="highlighter-rouge">$$ E = mc^2 $$</code>. If you leave it inside a paragraph, it will produce an inline expression, just like <script type="math/tex">E = mc^2</script>.</p>
 
-<p>{% highlight c++ linenos %}  <br /> code code code <br /> {% endhighlight %}</p>
+<p>To use display mode, again surround your expression with <code class="highlighter-rouge">$$</code> and place it as a separate paragraph. Here is an example:</p>
 
-<p>The keyword <code class="highlighter-rouge">linenos</code> triggers display of line numbers.
-Produces something like this:</p>
+<script type="math/tex; mode=display">\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)</script>
 
-<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="k">const</span> <span class="err">\</span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
-<span class="p">{</span>
-    <span class="n">string</span> <span class="n">myString</span><span class="p">;</span>
-
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"input a string: "</span><span class="p">;</span>
-    <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">myString</span><span class="p">);</span>
-    <span class="kt">int</span> <span class="n">length</span> <span class="o">=</span> <span class="n">myString</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
-
-    <span class="kt">char</span> <span class="n">charArray</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span> <span class="o">*</span> <span class="p">[</span><span class="n">length</span><span class="p">];</span>
-
-    <span class="n">charArray</span> <span class="o">=</span> <span class="n">myString</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">length</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">){</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">charArray</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
-
+<p>Note that MathJax 3 is <a href="https://docs.mathjax.org/en/latest/upgrading/whats-new-3.0.html" target="\_blank">a major re-write of MathJax</a> that brought a significant improvement to the loading and rendering speed, which is now <a href="http://www.intmath.com/cg5/katex-mathjax-comparison.php" target="\_blank">on par with KaTeX</a>.</p>
 
   </article>
 

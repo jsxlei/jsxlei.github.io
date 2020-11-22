@@ -1,4 +1,4 @@
-# Otilia Stretcu's personal webpage
+# Lei Xiong's personal webpage
 
 This is the personal website of Lei Xiong, which can be visualized at [https://jsxlei.github.io/](https://jsxlei.github.io/).
 

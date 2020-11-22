@@ -35,7 +35,7 @@ contact_note: Feel free to drop me a line via e-mail.
 
 # # Pagination
 # paginate: 4
-# permalink: /posts/:year/:title/
+permalink: /posts/:year/:title/
 # paginate_path: /blog/page:num/
 
 # text:
