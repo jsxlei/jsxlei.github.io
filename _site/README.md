@@ -1,6 +1,6 @@
 # Otilia Stretcu's personal webpage
 
-This is the personal website of Otilia Stretcu, which can be visualized at [https://otiliastr.github.io/](https://otiliastr.github.io/).
+This is the personal website of Lei Xiong, which can be visualized at [https://jsxlei.github.io/](https://jsxlei.github.io/).
 
 ## How to use this template for your website
 
