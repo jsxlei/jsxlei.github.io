@@ -6,6 +6,9 @@ Nat Commun:
 
 arXiv:
   url: https://arxiv.org
+  
+bioRxiv:
+  url: https://www.biorxiv.org
 
 AAAI:
   url: https://aaai.org/Conferences/AAAI/aaai.php

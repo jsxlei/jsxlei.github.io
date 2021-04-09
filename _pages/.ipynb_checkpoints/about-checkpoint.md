@@ -28,8 +28,9 @@ address: <a href="https://www.google.com/maps/place/Biology+Building+of+Hall/@40
         </p>
         
         <p>
-            My PhD research focuses on developing artificial intelligence tool for analysis of single-cell RNA-seq and ATAC-seq data to uncover gene regulation in cell heterogeneity. 
-            I am also passionate about applying network analysis methods. Previously, I did some research in structural protein-protein interaction (PPI) network to find out structural modules enriching cancer mutations and drug targets.
+            My PhD research focuses on developing artificial intelligence tool for analysis of single-cell RNA-seq and ATAC-seq data to uncover gene regulation in cell heterogeneity. <br />
+            I am also passionate about applying network analysis methods. Previously, I did some research in structural protein-protein interaction (PPI) network to find out structural modules enriching cancer mutations and drug targets. <br />
+            I have a broad interest in applying artificial intelligence algorithm to solve biological questions.
         </p>
     </div>
 </div>
