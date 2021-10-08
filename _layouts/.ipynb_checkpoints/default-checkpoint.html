@@ -8,7 +8,7 @@
   <meta name="description" content="{{ site.description }}">
 
   <!-- Fonts and Icons -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Helvetica:300,400,500,700|Helvetica:100,300,400,500,700|Material+Icons" />
 
   <!-- CSS Files -->
   <link rel="stylesheet" href="{{ '/assets/css/all.min.css' | prepend: site.baseurl | prepend: site.url }}">
@@ -198,5 +198,27 @@
     ga('create', '{{ site.google_analytics }}', 'auto');
     ga('send', 'pageview');
   </script>
+    
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXQXWK2E6C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZXQXWK2E6C');
+  </script>
+    
+  <!-- Baidu Tongji -->  
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?fc5a69a8465cb0fd34201c2fab055fc4";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
 </body>
 </html>

@@ -3,7 +3,7 @@ layout: page
 title: SCALEX
 description: Construction of continuously expandable single-cell atlases through integration of heterogeneous datasets in a generalized cell-embedding space
 github: jsxlei/SCALEX
-img: /assets/img/scalex.jpg
+img: /assets/img/publications/scalex.jpg
 ---
 
 <br />

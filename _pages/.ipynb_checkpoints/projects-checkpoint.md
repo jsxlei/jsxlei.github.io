@@ -1,9 +1,9 @@
 ---
 layout: page
-title: softwares
+title: Softwares
 nav: projects
 permalink: /projects/
-description: some of the softwares I have developed
+description: 
 ---
 
 <div id="projects" class="row mt-2 pt-3" style="overflow: visible !important;">

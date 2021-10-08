@@ -1,11 +1,9 @@
 ---
 layout: page
 permalink: /
-title: about
-nav: about
-description: <a class="page-description" target="_blank">Computational Biology</a> • <a href="http://life.tsinghua.edu.cn/" class="page-description" target="_blank">School of Life Sciences</a> • <a href="http://tsinghua.edu.cn/" class="page-description" target="_blank">Tsinghua University</a>
-address: <a href="https://www.google.com/maps/place/Biology+Building+of+Hall/@40.0027011,116.3177901,16z/data=!4m8!1m2!2m1!1z5riF5Y2O5aSn5a2mIOeUn-eJqeWMu-Wtpummhg!3m4!1s0x35f056a19b14bb3b:0xe54d0d0aeaf8c544!8m2!3d40.003354!4d116.31989?hl=en" class="page-description" target="_blank">Biomedical Building, Tsinghua University, Haidian District, Beijing, China</a>
 ---
+<!-- <a class="page-description" target="_blank">Computational Biology</a> • <a href="http://life.tsinghua.edu.cn/" class="page-description" target="_blank">School of Life Sciences</a> • <a href="http://tsinghua.edu.cn/" class="page-description" target="_blank">Tsinghua University</a>
+address: <a href="https://www.google.com/maps/place/Biology+Building+of+Hall/@40.0027011,116.3177901,16z/data=!4m8!1m2!2m1!1z5riF5Y2O5aSn5a2mIOeUn-eJqeWMu-Wtpummhg!3m4!1s0x35f056a19b14bb3b:0xe54d0d0aeaf8c544!8m2!3d40.003354!4d116.31989?hl=en" class="page-description" target="_blank">Biomedical Building, Tsinghua University, Haidian District, Beijing, China</a> -->
 
 <div class="col p-0 pt-4 pb-4">
   <h1 class="pb-3 title text-left font-weight-bold">Lei Xiong</h1>
@@ -24,26 +22,22 @@ address: <a href="https://www.google.com/maps/place/Biology+Building+of+Hall/@40
         </div>
 
         <p>
-            I recieved my Ph.D. in Computational Biology at <a href="http://www.tsinghua.edu.cn/" target="_blank">Tsinghua University</a> advised by <a href="http://life.tsinghua.edu.cn/lifeen/info/1034/1075.htm" target="_blank">Prof. Qiangfeng Cliff Zhang</a>. 
+            I recieved my Ph.D. in Computational Biology at <a href="http://www.tsinghua.edu.cn/" target="_blank">Tsinghua University</a> advised by <a href="http://life.tsinghua.edu.cn/lifeen/info/1034/1075.htm" target="_blank">Prof. Qiangfeng Cliff Zhang</a>. I graduated with a B.A. in Biology at <a href="https://www.ustc.edu.cn" target="_blank" >University of Science and Technology of China</a> and my B.A. thesis was supervised by <a href="https://molbio.princeton.edu/people/nieng-yan" target="_blank">Prof. Nieng Yan</a>.
         </p>
         
         <p>
-            My PhD research focuses on developing artificial intelligence tool for analysis of single-cell RNA-seq and ATAC-seq data to uncover gene regulation in cell heterogeneity. <br />
-            I am also passionate about applying network analysis methods. Previously, I did some research in structural protein-protein interaction (PPI) network to find out structural modules enriching cancer mutations and drug targets. <br />
+            My PhD research focuses on developing artificial intelligence tool for analysis of single-cell RNA-seq and ATAC-seq data to uncover gene regulation in cell heterogeneity. Previously, I did some research in structural protein-protein interaction (PPI) network. <br />
+        </p>
+        <p>
             I have a broad interest in applying artificial intelligence algorithm to solve biological questions.
         </p>
     </div>
 </div>
 
-<div class="col text-justify p-0">
-    <p>
-        Before I joined Tsinghua, I graduated with a B.A. in Biology at <a href="https://www.ustc.edu.cn" target="_blank" >University of Science and Technology of China</a> and my B.A. thesis was supervised by <a href="https://molbio.princeton.edu/people/nieng-yan" target="_blank">Prof. Nieng Yan</a>.
-    </p>
-</div>
 
 <!-- News -->
 <div class="news mt-3 p-0">
-  <h1 class="title mb-4 p-0">news</h1>
+  <h1 class="title mb-4 p-0">News</h1>
   {% assign news = site.news | reverse %}
   {% for item in news limit: site.news_limit %}
     <div class="row p-0">
@@ -61,6 +55,6 @@ address: <a href="https://www.google.com/maps/place/Biology+Building+of+Hall/@40
 
 <!-- Selected publications -->
 <div class="news mt-3 p-0">
-  <h1 class="title mb-4 p-0">selected publications</h1>
+  <h1 class="title mb-4 p-0">Research</h1>
   {% bibliography -f papers -q @*[selected=true]* %}
 </div>

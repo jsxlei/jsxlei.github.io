@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /cv/
-title: cv
+title: Bio
 nav: cv
 ---
 
