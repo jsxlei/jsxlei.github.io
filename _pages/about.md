@@ -1,6 +1,8 @@
 ---
 layout: page
 permalink: /
+title: about
+nav: about
 ---
 <!-- <a class="page-description" target="_blank">Computational Biology</a> • <a href="http://life.tsinghua.edu.cn/" class="page-description" target="_blank">School of Life Sciences</a> • <a href="http://tsinghua.edu.cn/" class="page-description" target="_blank">Tsinghua University</a>
 address: <a href="https://www.google.com/maps/place/Biology+Building+of+Hall/@40.0027011,116.3177901,16z/data=!4m8!1m2!2m1!1z5riF5Y2O5aSn5a2mIOeUn-eJqeWMu-Wtpummhg!3m4!1s0x35f056a19b14bb3b:0xe54d0d0aeaf8c544!8m2!3d40.003354!4d116.31989?hl=en" class="page-description" target="_blank">Biomedical Building, Tsinghua University, Haidian District, Beijing, China</a> -->

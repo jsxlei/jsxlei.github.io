@@ -35,7 +35,7 @@ google_analytics: UA-197596889-1
 
 # # Pagination
 # paginate: 4
-# permalink: /posts/:year/:title/
+permalink: /posts/:year/:title/
 # paginate_path: /blog/page:num/
 
 # text:
