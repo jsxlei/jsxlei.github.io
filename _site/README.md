@@ -2,6 +2,15 @@
 
 This is the personal website of Lei Xiong, which can be visualized at [https://jsxlei.github.io/](https://jsxlei.github.io/).
 
+## Modification
+after modified some files in the src repo at the local, upload the updates to the remote repo.
+
+    git add *
+    git commit -m “”
+    git push origin src
+    ./bin/deploy 
+    git switch -f src
+
 ## How to use this template for your website
 
 This website was designed using the "al-folio" [Jekyll](https://jekyllrb.com/) theme for academics.
