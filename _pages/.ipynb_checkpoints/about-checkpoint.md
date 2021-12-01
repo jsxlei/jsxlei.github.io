@@ -22,16 +22,16 @@ address: <a href="https://www.google.com/maps/place/Biology+Building+of+Hall/@40
         <div class="col-xs-12 col-sm-6 p-0 pt-2 pb-sm-2 pb-4 pl-sm-4 text-center" style="float: right;">
           <img class="profile-img img-responsive" src="{{ 'prof_pic.jpg' | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
         </div>
+        <p>
+            I currently am a Postdoctorial Associate in Computer Science and Artificial Intelligence Laboratory (CSAIL) at the Massachusetts Institute of Technology (MIT), working with Prof. Manolis Kellis at <a href="http://compbio.mit.edu/" target="_blank" >MIT Compuatational Biology Lab</a>.
+
+        </p>
+        <p>
+            I recieved my Ph.D. in Computational Biology at Tsinghua University and graduated with a B.A. in Biology at University of Science and Technology of China. 
+        </p>
 
         <p>
-            I recieved my Ph.D. in Computational Biology at <a href="http://www.tsinghua.edu.cn/" target="_blank">Tsinghua University</a> advised by <a href="http://life.tsinghua.edu.cn/lifeen/info/1034/1075.htm" target="_blank">Prof. Qiangfeng Cliff Zhang</a>. I graduated with a B.A. in Biology at <a href="https://www.ustc.edu.cn" target="_blank" >University of Science and Technology of China</a> and my B.A. thesis was supervised by <a href="https://molbio.princeton.edu/people/nieng-yan" target="_blank">Prof. Nieng Yan</a>.
-        </p>
-        
-        <p>
-            My PhD research focuses on developing artificial intelligence tool for analysis of single-cell RNA-seq and ATAC-seq data to uncover gene regulation in cell heterogeneity. Previously, I did some research in structural protein-protein interaction (PPI) network. <br />
-        </p>
-        <p>
-            I have a broad interest in applying artificial intelligence algorithm to solve biological questions.
+            I have a broad interest in applying artificial intelligence algorithm to solve biological questions, especially focus on single-cell genomics.
         </p>
     </div>
 </div>
