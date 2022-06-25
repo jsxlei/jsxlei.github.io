@@ -86,37 +86,37 @@
     
       <div class="col p-0">
         {% if entry.abstract %}
-          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#{{entry_id}}-abstract" role="button" aria-expanded="false" aria-controls="{{entry_id}}-abstract">Abstract</a>
+          <a class="badge light-blue waves-effect font-weight-light mr-1" data-toggle="collapse" href="#{{entry_id}}-abstract" role="button" aria-expanded="false" aria-controls="{{entry_id}}-abstract">Abstract</a>
         {% endif %}
         {% if entry.html %}
-          <a class="badge grey waves-effect font-weight-light mr-1" href="{{ entry.html }}" target="_blank">HTML</a>
+          <a class="badge light-blue waves-effect font-weight-light mr-1" href="{{ entry.html }}" target="_blank">HTML</a>
         {% endif %}
         {% if entry.pdf %}
-          <a class="badge grey waves-effect font-weight-light mr-1" href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>
+          <a class="badge light-blue waves-effect font-weight-light mr-1" href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>
         {% endif %}
         {% if entry.supplement %}
-          <a class="badge grey waves-effect font-weight-light mr-1" href="{{ entry.supplement | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Supplementary</a>
+          <a class="badge light-blue waves-effect font-weight-light mr-1" href="{{ entry.supplement | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Supplementary</a>
         {% endif %}
         {% if entry.addendum %}
-          <a class="badge grey waves-effect font-weight-light mr-1" href="{{ entry.addendum | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Addendum</a>
+          <a class="badge light-blue waves-effect font-weight-light mr-1" href="{{ entry.addendum | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Addendum</a>
         {% endif %}
         {% if entry.poster %}
-          <a class="badge grey waves-effect font-weight-light mr-1" href="{{ entry.poster | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Poster</a>
+          <a class="badge light-blue waves-effect font-weight-light mr-1" href="{{ entry.poster | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Poster</a>
         {% endif %}
         {% if entry.slides %}
-          <a class="badge grey waves-effect font-weight-light mr-1" href="{{ entry.slides | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>
+          <a class="badge light-blue waves-effect font-weight-light mr-1" href="{{ entry.slides | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>
         {% endif %}
         {% if entry.code %}
-          <a class="badge grey waves-effect font-weight-light mr-1" href="{{ entry.code }}" target="_blank">Code</a>
+          <a class="fab fa-github gh-icon font-weight-light mr-1" href="{{ entry.code }}" target="_blank"></a>
         {% endif %}
         {% if entry.arxiv %}
-          <a class="badge grey waves-effect font-weight-light mr-1" href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>
+          <a class="badge light-blue waves-effect font-weight-light mr-1" href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>
         {% endif %}
         {% if entry.website %}
-          <a class="badge grey waves-effect font-weight-light mr-1" href="{{ entry.website }}" target="_blank">Website</a>
+          <a class="badge light-blue waves-effect font-weight-light mr-1" href="{{ entry.website }}" target="_blank">Website</a>
         {% endif %}
         {% if entry.video %}
-          <a class="badge grey waves-effect font-weight-light mr-1" href="{{ entry.video }}" target="_blank">Video</a>
+          <a class="badge light-blue waves-effect font-weight-light mr-1" href="{{ entry.video }}" target="_blank">Video</a>
         {% endif %}
       </div>
     

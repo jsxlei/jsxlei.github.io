@@ -61,9 +61,9 @@ collections:
       layout: page
     output: true
     permalink: /news/:path/
-  projects:
+  softwares:
     output: true
-    permalink: /projects/:path/
+    permalink: /softwares/:path/
   awards:
     defaults:
       layout: page

@@ -1,11 +1,11 @@
----
+<!-- ---
 layout: page
 permalink: /publications/
 title: Publications
 nav: publications
 description: <nobr><em>*</em></nobr> for equal authorship, <nobr><em>#</em></nobr> for corresponding authorship.
 years: [2022, 2021, 2019, 2015]
----
+--- -->
 
 <br/>
 {% for y in page.years %}
