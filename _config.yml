@@ -64,7 +64,11 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-
+  awards:
+    defaults:
+      layout: page
+    output: true
+    permalink: /awards/:path/
 news_limit: 10
 
 # -----------------------------------------------------------------------------
