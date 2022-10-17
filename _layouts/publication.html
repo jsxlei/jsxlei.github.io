@@ -5,7 +5,7 @@
   {% assign entry_id = entry.key | replace: ':', '-' %}
   <div class="col-sm-4 p-0">
       <div class="ml-0 pl-0">
-        <img src="{{entry.img}}" alt="disent" width="240" height="140"> 
+        <img src="{{entry.img}}" alt="disent" width="240" height=""> 
       </div>
   </div>
   <div class="col-sm-8 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
@@ -104,7 +104,7 @@
           <a class="badge light-blue waves-effect font-weight-light mr-1" href="{{ entry.poster | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Poster</a>
         {% endif %}
         {% if entry.slides %}
-          <a class="badge light-blue waves-effect font-weight-light mr-1" href="{{ entry.slides | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>
+          <a class="badge light-blue waves-effect font-weight-light mr-1" href="{{ entry.slides | prepend: '' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>
         {% endif %}
         {% if entry.code %}
           <a class="fab fa-github gh-icon font-weight-light mr-1" href="{{ entry.code }}" target="_blank"></a>
