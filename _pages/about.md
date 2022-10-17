@@ -31,19 +31,19 @@ years: [2022, 2021, 2019, 2015]
             <b>Broad Institute of MIT and Harvard</b> <br>
           </p>
         <p> 
-          Currently I am developing algorithms to learn the regulation mechanisms from epigenetics to transcriptomes with paired mulit-omics single-cell datasets after I joined Manolis Kellis Lab.
+          Currently I am developing algorithms to learn the regulation mechanisms from epigenetics to transcriptomes with paired mulit-omics single-cell datasets since I joined Manolis Kellis Lab.
         </p>
         <p>
-          My PhD research focuses on developing artificial intelligence tool for clustering single-cell ATAC-seq data to uncover gene regulation in cell heterogeneity <a href="https://github.com/jsxlei/SCALE" target="_blank">(<b>SCALE</b>)</a> and online integration by projecting million-sized single-cell datasets onto the same batch-free biological embedding space via a generalized encoder <a href="https://github.com/jsxlei/SCALE" target="_blank">(<b>SCALEX</b>)</a>. 
+          My PhD research focuses on applying artificial intelligence algorithms to develop tools on single-cell genomic data: <a href="https://github.com/jsxlei/SCALE" target="_blank"><b>SCALE</b></a> for clustering single-cell ATAC-seq data to uncover gene regulation in cell heterogeneity, also the first deep learning method and the first imputation method applied on scATAC; the second method is <a href="https://github.com/jsxlei/SCALE" target="_blank"><b>SCALEX</b></a>, for online integration by projecting million-sized single-cell datasets onto the same batch-free biological embedding space via a generalized encoder. 
         </p>
         <p>
-          I am also passionate about applying network analysis methods. Previously, I did some research in structural-protein-protein interaction (PPI) network to find out structural modules enriching cancer mutations and drug targets.
+          I am also passionate about applying network analysis methods, especially the graph neural network and graph attention network. Previously, I did some research in structural-protein-protein interaction (PPI) network to find out structural modules enriching cancer mutations and drug targets.
         </p>
         <p>
-          Before I switched to computational, I had two years experimental experience in structure biology lab at USTC and Tsinghua when I was a undergraduate student. 
+          Before I switched to computational, I had two-year experimental experience in structure biology lab at USTC and Tsinghua when I was an undergraduate student. 
         </p>
         <p>
-          <b>I have a broad interest in applying cutting-edge artificial intelligence algorithms to solve biological questions.</b>
+          <b>I have a broad interest in applying cutting-edge artificial intelligence algorithms including variational auto-encoder, Transformers, diffusion methods to solve biological questions.</b>
         </p>
         <p>
           <b>Feel free to reach out by email jsxlei at gmail.com or other social media listed above!</b>
