@@ -1,8 +1,4 @@
 _site/
-_site/README.md
-_site/*
-*/.ipynb_checkpoints/*
-*.ipynb_checkpoints
-*.DS_store
 */.ipynb_checkpoints/
-.ipynb_checkpoints
+.ipynb_checkpoints/
+*.DS_store/

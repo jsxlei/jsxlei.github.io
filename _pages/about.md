@@ -3,7 +3,7 @@ layout: page
 permalink: /
 title: about
 nav: about
-years: [2022, 2021, 2019, 2015]
+years: [2022, 2019, 2015]
 ---
 
 <!-- Introduction -->
@@ -31,22 +31,10 @@ years: [2022, 2021, 2019, 2015]
             <b>Broad Institute of MIT and Harvard</b> <br>
           </p>
         <p> 
-          Currently I am developing algorithms to learn the regulation mechanisms from epigenetics to transcriptomes with paired mulit-omics single-cell datasets since I joined Manolis Kellis Lab.
+My research interests are centered on the development and application of innovative deep learning approaches to solve complex biological questions, with a primary focus on advancing our understanding of gene regulation and cellular diversity. To achieve this goal, I build models that can effectively capture and interpret complex features from biological datasets, which provides new insights into fundamental biological processes. Through my work, I aim to drive significant advances in the field of single-cell multiomics, which has the potential to contribute to a better understanding of human health and disease.
         </p>
         <p>
-          My PhD research focuses on applying artificial intelligence algorithms to develop tools on single-cell genomic data: <a href="https://github.com/jsxlei/SCALE" target="_blank"><b>SCALE</b></a> for clustering single-cell ATAC-seq data to uncover gene regulation in cell heterogeneity, also the first deep learning method and the first imputation method applied on scATAC; the second method is <a href="https://github.com/jsxlei/SCALEX" target="_blank"><b>SCALEX</b></a>, for online integration by projecting million-sized single-cell datasets onto the same batch-free biological embedding space via a generalized encoder. 
-        </p>
-        <p>
-          I am also passionate about applying network analysis methods, especially the graph neural network and graph attention network. Previously, I did some research in structural-protein-protein interaction (PPI) network to find out structural modules enriching cancer mutations and drug targets.
-        </p>
-        <p>
-          Before I switched to computational, I had two-year experimental experience in structure biology lab at USTC and Tsinghua when I was an undergraduate student. 
-        </p>
-        <p>
-          <b>I have a broad interest in applying cutting-edge artificial intelligence algorithms including variational auto-encoder, Transformers, diffusion methods to solve biological questions.</b>
-        </p>
-        <p>
-          <b>Feel free to reach out by email jsxlei at gmail.com or other social media listed above!</b>
+          Feel free to reach out by email <b>jsxlei at gmail.com</b> or other social media listed above!
         </p>
     </div>
 </div>
