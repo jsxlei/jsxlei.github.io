@@ -2,3 +2,4 @@ _site/
 */.ipynb_checkpoints/
 .ipynb_checkpoints/
 *.DS_store
+assets/.DS_Store
