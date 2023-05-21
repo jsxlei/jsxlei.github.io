@@ -25,7 +25,7 @@ years: [2022, 2019, 2015]
         </div>
         <h1 class="pb-3 title text-left font-weight-bold">Lei Xiong</h1>
           <p>
-            <b>Postdoctorial Associate</b> <br>
+            <b>Postdoctoral Associate</b> <br>
             <b>Computer Science and Artificial Intelligence Laboratory (CSAIL) </b> <br> 
             <b>Massachusetts Institute of Technology (MIT) </b> <br>
             <b>Broad Institute of MIT and Harvard</b> <br>
