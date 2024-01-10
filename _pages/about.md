@@ -3,7 +3,7 @@ layout: page
 permalink: /
 title: about
 nav: about
-years: [2022, 2019, 2015]
+years: [2023, 2022, 2019, 2015]
 ---
 
 <!-- Introduction -->
@@ -14,11 +14,11 @@ years: [2022, 2019, 2015]
           <img class="profile-img img-responsive" src="{{ 'prof_pic2.jpg' | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
           <nav class="sidebar">
             <!-- <ul> -->
-              <li class="font-weight-bold"><a href="/assets/pdf/leixiong_cv.pdf">Bio</a></li>
+              <li class="font-weight-bold"><a href="/assets/pdf/CV_leixiong.pdf">Bio</a></li>
+              <li class="font-weight-bold"><a href='#education'>Education</a></li>
               <li class="font-weight-bold"><a href='#news'>News</a></li>
               <li class="font-weight-bold"><a href='#publications'>Publications</a></li>
               <li class="font-weight-bold"><a href='#softwares'>Softwares</a></li>
-              <li class="font-weight-bold"><a href='#education'>Education</a></li>
               <li class="font-weight-bold"><a href='#honors and awards'>Honors and Awards</a></li>
             <!-- </ul> -->
           </nav>
@@ -39,6 +39,38 @@ My research interests are centered on the development and application of innovat
     </div>
 </div>
 
+<!-- Education-->
+<div id="education" class="news mt-3 p-0">
+  <h2 class="font-weight-bold">Education</h2>
+    <div class="row p-0">
+      <div class="col-sm-2 p-0">
+        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">
+          2015-2020
+        </span>
+      </div>
+      <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
+        <p><b>Tsinghua University</b> <br>
+            <b>Ph.D. in Computational Biology</b> <br>
+            <b>Advisor</b>: <a href="http://life.tsinghua.edu.cn/lifeen/info/1034/1075.htm" target="_blank"><b>Prof. Qiangfeng Cliff Zhang</b></a> <br>
+            <b>Thesis</b>: Artificial intelligence method for single-cell ATAC-seq data via feature extraction
+        </p>
+      </div>
+    </div>
+    <div class="row p-0">
+      <div class="col-sm-2 p-0">
+        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">
+          2011-2015
+        </span>
+      </div>
+      <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
+        <p><b>University of Science and Technology of China (USTC)</b> <br>
+            <b>B.S. in Biology, Shitsan Pai Talent Program in Life Sciences </b><br>
+            <b>Advisor</b>: <a href="https://molbio.princeton.edu/people/nieng-yan" target="_blank"><b>Prof. Nieng Yan</b></a> <br>
+            <b>Thesis</b>: Structure basis and transport mechanism of membrane protein GLUT3
+        </p>
+      </div>
+    </div>
+</div>
 
 <!-- News -->
 <div id="news" class="news mt-3 p-0">
@@ -116,39 +148,6 @@ My research interests are centered on the development and application of innovat
     {% endfor %}
   </div>
 <div class="news mt-3 p-0">
-
-<!-- Education-->
-<div id="education" class="news mt-3 p-0">
-  <h2 class="font-weight-bold">Education</h2>
-    <div class="row p-0">
-      <div class="col-sm-2 p-0">
-        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">
-          2015-2020
-        </span>
-      </div>
-      <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-        <p><b>Tsinghua University</b> <br>
-            <b>Ph.D. in Computational Biology</b> <br>
-            <b>Advisor</b>: <a href="http://life.tsinghua.edu.cn/lifeen/info/1034/1075.htm" target="_blank"><b>Prof. Qiangfeng Cliff Zhang</b></a> <br>
-            <b>Thesis</b>: Artificial intelligence method for single-cell ATAC-seq data via feature extraction
-        </p>
-      </div>
-    </div>
-    <div class="row p-0">
-      <div class="col-sm-2 p-0">
-        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">
-          2011-2015
-        </span>
-      </div>
-      <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-        <p><b>University of Science and Technology of China (USTC)</b> <br>
-            <b>B.S. in Biology, Shitsan Pai Talent Program in Life Sciences </b><br>
-            <b>Advisor</b>: <a href="https://molbio.princeton.edu/people/nieng-yan" target="_blank"><b>Prof. Nieng Yan</b></a> <br>
-            <b>Thesis</b>: Structure basis and transport mechanism of membrane protein GLUT3
-        </p>
-      </div>
-    </div>
-</div>
 
 
 <!-- Honors and Awards-->
