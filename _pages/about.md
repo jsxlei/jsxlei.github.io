@@ -3,7 +3,7 @@ layout: page
 permalink: /
 title: about
 nav: about
-years: [2023, 2022, 2019, 2015]
+years: [2024, 2023, 2022, 2019, 2015]
 ---
 
 <!-- Introduction -->
