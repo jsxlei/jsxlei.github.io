@@ -25,13 +25,12 @@ years: [2024, 2023, 2022, 2019, 2015]
         </div>
         <h1 class="pb-3 title text-left font-weight-bold">Lei Xiong</h1>
           <p>
-            <b>Postdoctoral Associate</b> <br>
-            <b>Computer Science and Artificial Intelligence Laboratory (CSAIL) </b> <br> 
-            <b>Massachusetts Institute of Technology (MIT) </b> <br>
-            <b>Broad Institute of MIT and Harvard</b> <br>
+            <b>Postdoctoral Scholar</b> <br>
+            <b>Genetics </b> <br> 
+            <b>Stanford University </b> <br>
           </p>
         <p> 
-My research interests are centered on the development and application of innovative deep learning approaches to solve complex biological questions, with a primary focus on advancing our understanding of gene regulation and cellular diversity. To achieve this goal, I build models that can effectively capture and interpret complex features from biological datasets, which provides new insights into fundamental biological processes. Through my work, I aim to drive significant advances in the field of single-cell multiomics, which has the potential to contribute to a better understanding of human health and disease.
+My research interests are centered on the development and application of innovative deep learning approaches to solve complex biological questions, with a primary focus on advancing our understanding of gene regulation and cellular diversity. To achieve this goal, I build models that can effectively capture and interpret complex features from biological datasets, which provides new insights into fundamental biological processes. Through my work, I aim to drive significant advances in the field of single-cell multiomics and regulatory DNA sequence, which has the potential to contribute to a better understanding of human health and disease.
         </p>
         <p>
           Feel free to reach out by email <b>jsxlei at gmail.com</b> or other social media listed above!
@@ -51,7 +50,7 @@ My research interests are centered on the development and application of innovat
       <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
         <p><b>Tsinghua University</b> <br>
             <b>Ph.D. in Computational Biology</b> <br>
-            <b>Advisor</b>: <a href="http://life.tsinghua.edu.cn/lifeen/info/1034/1075.htm" target="_blank"><b>Prof. Qiangfeng Cliff Zhang</b></a> <br>
+            <b>Advisor</b>: Prof.<a href="http://life.tsinghua.edu.cn/lifeen/info/1034/1075.htm" target="_blank"><b>Qiangfeng Cliff Zhang</b></a> <br>
             <b>Thesis</b>: Artificial intelligence method for single-cell ATAC-seq data via feature extraction
         </p>
       </div>
@@ -65,7 +64,7 @@ My research interests are centered on the development and application of innovat
       <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
         <p><b>University of Science and Technology of China (USTC)</b> <br>
             <b>B.S. in Biology, Shitsan Pai Talent Program in Life Sciences </b><br>
-            <b>Advisor</b>: <a href="https://molbio.princeton.edu/people/nieng-yan" target="_blank"><b>Prof. Nieng Yan</b></a> <br>
+            <b>Advisor</b>: Prof.<a href="https://molbio.princeton.edu/people/nieng-yan" target="_blank"><b>Nieng Yan</b></a> <br>
             <b>Thesis</b>: Structure basis and transport mechanism of membrane protein GLUT3
         </p>
       </div>
