@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SCALEX
-description: Online integration of atlas-level single-cell datasets
+description: Online integration and projection of atlas-level single-cell datasets
 github: SCALEX
 img: /assets/img/publications/scalex.jpg
 pypi: https://pypi.org/project/scalex

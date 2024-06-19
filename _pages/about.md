@@ -93,7 +93,7 @@ My research interests are centered on the development and application of innovat
 
 <div id="publications" class="news mt-3 p-0">
   <h2 class="font-weight-bold">Publications</h2>
-  <!-- <nobr><em>*</em></nobr> for equal authorship, <nobr><em>#</em></nobr> for corresponding authorship. -->
+  <nobr><em><sup>*</sup></em></nobr> for equal authorship, <nobr><em><sup>#</sup></em></nobr> for corresponding authorship.
   {% for y in page.years %}
   <div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
     <div class="col-sm-1 mt-2 p-0 pr-1">
