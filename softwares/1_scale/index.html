@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Lei Xiong | SCALE</title>
+  <meta name="description" content="">
+
+  <!-- Fonts and Icons -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Helvetica:300,400,500,700|Helvetica:100,300,400,500,700|Material+Icons" />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="/assets/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/academicons.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/softwares/1_scale/">
+</head>
+<body>
+  <!-- Header -->
+  <nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
+    <div class="container-fluid p-0">
+      
+        <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Lei</span> Xiong</a>
+      
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              Home
+              
+            </a>
+          </li>
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Scrolling Progress Bar -->
+  <progress id="progress" value="0">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+
+  <!-- Content -->
+  <div class="content">
+    
+  <h1>SCALE</h1>
+  <h6>single-cell ATAC-seq clustering and imputation</h6>
+
+
+<p><a href="https://github.com/jsxlei/scale/stargazers"><img src="https://img.shields.io/github/stars/jsxlei/SCALE?logo=GitHub&amp;color=yellow" alt="Stars" /></a>
+<a href="https://pypi.org/project/scale"><img src="https://img.shields.io/pypi/v/scale.svg" alt="PyPI" /></a>
+<a href="https://pepy.tech/project/scale"><img src="https://pepy.tech/badge/scale" alt="Downloads" /></a></p>
+<h1 id="single-cell-atac-seq-analysis-via-latent-feature-extraction">Single-Cell ATAC-seq analysis via Latent feature Extraction</h1>
+<p><img src="https://github.com/jsxlei/SCALE/wiki/png/model.png" width="700" /></p>
+
+<h2 id="news">News</h2>
+
+<p>2021.03.23 Introduce the select_var_feature from Episcanpy to filter peaks<br />
+2021.01.14 Update to compatible with <a href="https://anndata.readthedocs.io/en/latest/anndata.AnnData.html">h5ad</a> file and <a href="https://scanpy.readthedocs.io/en/stable/index.html">scanpy</a></p>
+
+<h2 id="installation">Installation</h2>
+
+<p>SCALE neural network is implemented in <a href="https://pytorch.org/">Pytorch</a> framework.<br />
+Running SCALE on CUDA is recommended if available.</p>
+
+<h4 id="install-from-pypi">install from PyPI</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pip install scale
+</code></pre>
+</div>
+
+<h4 id="install-from-github">install from GitHub</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone git://github.com/jsxlei/SCALE.git
+cd SCALE
+python setup.py install
+</code></pre>
+</div>
+
+<p>Installation only requires a few minutes.</p>
+
+<h2 id="quick-start">Quick Start</h2>
+
+<h4 id="input">Input</h4>
+<ul>
+  <li>h5ad file</li>
+  <li><strong>count matrix file</strong>:
+    <ul>
+      <li>row is peak and column is barcode, in <strong>txt</strong> / <strong>tsv</strong> (sep=<strong>“\t”</strong>) or <strong>csv</strong> (sep=<strong>”,”</strong>) format</li>
+    </ul>
+  </li>
+  <li>mtx <strong>folder</strong> contains <strong>three files</strong>:
+    <ul>
+      <li><strong>count file</strong>: count in <strong>mtx</strong> format, filename contains key word <strong>“count”</strong> / <strong>“matrix”</strong></li>
+      <li><strong>peak file</strong>: 1-column of peaks <strong>chr_start_end</strong>, filename contains key word <strong>“peak”</strong></li>
+      <li><strong>barcode file</strong>: 1-column of barcodes, filename contains key word <strong>“barcode”</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="run">Run</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>SCALE.py -d [input]
+</code></pre>
+</div>
+
+<p>if cluster number k is known:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>SCALE.py -d [input] -k [k]
+</code></pre>
+</div>
+
+<h4 id="output">Output</h4>
+<p>Output will be saved in the output folder including:</p>
+<ul>
+  <li><strong>model.pt</strong>:  saved model to reproduce results cooperated with option –pretrain</li>
+  <li><strong>adata.h5ad</strong>:  saved data including Leiden cluster assignment, latent feature matrix and UMAP results.</li>
+  <li><strong>umap.pdf</strong>:  visualization of 2d UMAP embeddings of each cell</li>
+</ul>
+
+<h4 id="imputation">Imputation</h4>
+<p>Get binary imputed data in adata.h5ad file using scanpy <strong>adata.obsm[‘binary’]</strong> with option <strong>–binary</strong> (recommended for saving storage)</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>SCALE.py -d [input] --binary  
+</code></pre>
+</div>
+
+<p>or get numerical imputed data in adata.h5ad file using scanpy <strong>adata.obsm[‘imputed’]</strong> with option <strong>–impute</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>SCALE.py -d [input] --impute
+</code></pre>
+</div>
+
+<h4 id="useful-options">Useful options</h4>
+<ul>
+  <li>save results in a specific folder: [-o] or [–outdir]</li>
+  <li>embed feature by tSNE or UMAP: [–embed]  tSNE/UMAP</li>
+  <li>filter low quality cells by valid peaks number, default 100: [–min_peaks]</li>
+  <li>filter low quality peaks by valid cells number, default 10: [–min_cells]</li>
+  <li>modify the initial learning rate, default is 0.002: [–lr]</li>
+  <li>change iterations by watching the convergence of loss, default is 30000: [-i] or [–max_iter]</li>
+  <li>change random seed for parameter initialization, default is 18: [–seed]</li>
+  <li>binarize the imputation values: [–binary]</li>
+</ul>
+
+<h4 id="help">Help</h4>
+<p>Look for more usage of SCALE</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>SCALE.py --help 
+</code></pre>
+</div>
+
+<p>Use functions in SCALE packages.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>import scale
+from scale import *
+from scale.plot import *
+from scale.utils import *
+</code></pre>
+</div>
+
+<h4 id="running-time">Running time</h4>
+<p float="left">
+  <img src="https://github.com/jsxlei/SCALE/wiki/png/runtime.png" width="350" />
+  <img src="https://github.com/jsxlei/SCALE/wiki/png/memory.png" width="350" /> 
+</p>
+
+<h2 id="tutorial">Tutorial</h2>
+
+<p><strong><a href="https://github.com/jsxlei/SCALE/wiki/Forebrain">Tutorial Forebrain</a></strong>   Run SCALE on dense matrix <strong>Forebrain</strong> dataset (k=8, 2088 cells)</p>
+
+<h4 id="data-availability">Data availability</h4>
+<ul>
+  <li><a href="http://zhanglab.net/SCALE_SOURCE_DATA/Forebrain.h5ad">Forebrain</a></li>
+  <li><a href="http://zhanglab.net/SCALE_SOURCE_DATA/Splenocyte.h5ad">Splenocyte</a></li>
+  <li><a href="http://zhanglab.net/SCALE_SOURCE_DATA/mouse_atlas.h5ad">mouse_atlas</a></li>
+  <li><a href="http://zhanglab.net/SCALE_SOURCE_DATA/InSilico.h5ad">InSilico</a></li>
+  <li><a href="http://zhanglab.net/SCALE_SOURCE_DATA/Leukemia.h5ad">Leukemia</a></li>
+  <li><a href="http://zhanglab.net/SCALE_SOURCE_DATA/GM12878vsHEK.h5ad">GM12878vsHEK</a></li>
+  <li><a href="http://zhanglab.net/SCALE_SOURCE_DATA/GM12878vsHL.h5ad">GM12878vsHL</a></li>
+  <li><a href="http://zhanglab.net/SCALE_SOURCE_DATA/Breast_Tumor.h5ad">Breast_Tumor</a></li>
+</ul>
+
+<h2 id="reference">Reference</h2>
+<p><a href="https://www.nature.com/articles/s41467-019-12630-7">Lei Xiong, Kui Xu, Kang Tian, Yanqiu Shao, Lei Tang, Ge Gao, Michael Zhang, Tao Jiang &amp; Qiangfeng Cliff Zhang. SCALE method for single-cell ATAC-seq analysis via latent feature extraction. Nature Communications, (2019).</a></p>
+
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; Copyright 2024 Lei Xiong.
+    
+    
+  </footer>
+
+  <!-- Core JavaScript Files -->
+  <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/assets/js/popper.min.js" type="text/javascript"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/assets/js/mdb.min.js" type="text/javascript"></script>
+  <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="/assets/js/common.js"></script>
+
+  <!-- Scrolling Progress Bar -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var navbarHeight = $('#navbar').outerHeight(true);
+      $('body').css({ 'padding-top': navbarHeight });
+      $('progress-container').css({ 'padding-top': navbarHeight });
+      var progressBar = $('#progress');
+      progressBar.css({ 'top': navbarHeight });
+      var getMax = function() { return $(document).height() - $(window).height(); }
+      var getValue = function() { return $(window).scrollTop(); }   
+      // Check if the browser supports the progress element.
+      if ('max' in document.createElement('progress')) {
+        // Set the 'max' attribute for the first time.
+        progressBar.attr({ max: getMax() });
+        progressBar.attr({ value: getValue() });
+    
+        $(document).on('scroll', function() {
+          // On scroll only the 'value' attribute needs to be calculated.
+          progressBar.attr({ value: getValue() });
+        });
+
+        $(window).resize(function() {
+          var navbarHeight = $('#navbar').outerHeight(true);
+          $('body').css({ 'padding-top': navbarHeight });
+          $('progress-container').css({ 'padding-top': navbarHeight });
+          progressBar.css({ 'top': navbarHeight });
+          // On resize, both the 'max' and 'value' attributes need to be calculated.
+          progressBar.attr({ max: getMax(), value: getValue() });
+        });
+      } else {
+        var max = getMax(), value, width;
+        var getWidth = function() {
+          // Calculate the window width as a percentage.
+          value = getValue();
+          width = (value/max) * 100;
+          width = width + '%';
+          return width;
+        }
+        var setWidth = function() { progressBar.css({ width: getWidth() }); };
+        setWidth();
+        $(document).on('scroll', setWidth);
+        $(window).on('resize', function() {
+          // Need to reset the 'max' attribute.
+          max = getMax();
+          setWidth();
+        });
+      }
+    });
+  </script>
+
+  <!-- Code Syntax Highlighting -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <script src="/assets/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <!-- Script Used for Randomizing the Projects Order -->
+  <!-- <script type="text/javascript">
+    $.fn.shuffleChildren = function() {
+      $.each(this.get(), function(index, el) {
+        var $el = $(el);
+        var $find = $el.children();
+
+        $find.sort(function() {
+          return 0.5 - Math.random();
+        });
+
+        $el.empty();
+        $find.appendTo($el);
+      });
+    };
+    $("#projects").shuffleChildren();
+  </script> -->
+
+  <!-- Project Cards Layout -->
+  <script type="text/javascript">
+    var $grid = $('#projects');
+
+    // $grid.masonry({ percentPosition: true });
+    // $grid.masonry('layout');
+
+    // Trigger after images load.
+    $grid.imagesLoaded().progress(function() {
+      $grid.masonry({ percentPosition: true });
+      $grid.masonry('layout');
+    });
+  </script>
+
+  <!-- Enable Tooltips -->
+  <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-197596889-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+    
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXQXWK2E6C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZXQXWK2E6C');
+  </script>
+    
+  <!-- Baidu Tongji -->  
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?fc5a69a8465cb0fd34201c2fab055fc4";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+</body>
+</html>
