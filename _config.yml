@@ -99,6 +99,7 @@ scholar:
   bibliography: papers.bib
   bibliography_template: publication
   reference_tagname: div
+  first_name: Lei
 
   replace_strings: true
   join_strings: true

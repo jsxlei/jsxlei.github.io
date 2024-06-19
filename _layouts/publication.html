@@ -11,7 +11,7 @@
   <div class="col-sm-8 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
 
 
-    <div id="{{entry_id}}" class="col p-0">
+    <!-- <div id="{{entry_id}}" class="col p-0">
         <h5 class="title mb-0"><a href="{{entry.url}}" target="_blank">{{entry.title}}.</a></h5>
       <div class="author">
         {% for author in entry.author_array %}
@@ -50,6 +50,47 @@
             {% endunless %}
           {% endif %}
         {% endfor %}
+      </div> -->
+      <div id="{{entry_id}}" class="col p-0">
+        <h5 class="title mb-0"><a href="{{entry.url}}" target="_blank">{{entry.title}}.</a></h5>
+        <div class="author">
+          {% for author in entry.author_array %}
+            {% if forloop.length == 1 %}
+              {% if author.first contains site.scholar.first_name and author.last contains site.scholar.last_name %}
+                <nobr><em>{{author.first}} {{author.last}}</em>.</nobr>
+              {% else %}
+                {% if site.data.coauthors[author.first | append: ' ' | append: author.last] %}
+                  <nobr><a href="{{site.data.coauthors[author.first | append: ' ' | append: author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>.</nobr>
+                {% else %}
+                  <nobr>{{author.first}} {{author.last}},</nobr>
+                {% endif %}
+              {% endif %}
+            {% else %}
+              {% unless forloop.last %}
+                {% if author.first contains site.scholar.first_name and author.last contains site.scholar.last_name %}
+                  <nobr><em>{{author.first}} {{author.last}}</em>,</nobr>
+                {% else %}
+                  {% if site.data.coauthors[author.first | append: ' ' | append: author.last] %}
+                    <nobr><a href="{{site.data.coauthors[author.first | append: ' ' | append: author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>,</nobr>
+                  {% else %}
+                    <nobr>{{author.first}} {{author.last}},</nobr>
+                  {% endif %}
+                {% endif %}
+              {% else %}
+                and
+                {% if author.first contains site.scholar.first_name and author.last contains site.scholar.last_name %}
+                  <nobr><em>{{author.first}} {{author.last}}</em>.</nobr>
+                {% else %}
+                  {% if site.data.coauthors[author.first | append: ' ' | append: author.last] %}
+                    <nobr><a href="{{site.data.coauthors[author.first | append: ' ' | append: author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>.</nobr>
+                  {% else %}
+                    <nobr>{{author.first}} {{author.last}}</nobr>
+                  {% endif %}
+                {% endif %}
+              {% endunless %}
+            {% endif %}
+          {% endfor %}
+        </div>
       </div>
 
       <div>
