@@ -30,7 +30,7 @@ years: [2024, 2023, 2022, 2019, 2015]
             <b>Stanford University </b> <br>
           </p>
         <p> 
-My research interests are centered on the development and application of innovative deep learning approaches to solve complex biological questions, with a primary focus on advancing our understanding of gene regulation and cellular diversity. To achieve this goal, I build models that can effectively capture and interpret complex features from biological datasets, which provides new insights into fundamental biological processes. Through my work, I aim to drive significant advances in the field of single-cell multiomics and regulatory DNA sequence, which has the potential to contribute to a better understanding of human health and disease.
+My research interests are centered on the development and application of innovative deep learning approaches to solve complex biological questions, with a primary focus on advancing our understanding of gene regulation and cellular diversity. To achieve this goal, I build models that can effectively capture and interpret complex features from biological datasets, which provides new insights into fundamental biological processes. Specifically, I will <b>Decipher Mechanisms of Macrophage Dynamics and Cellular Crosstalk in Cancer</b>. Through my work, I aim to drive significant advances in the field of single-cell multiomics and regulatory DNA sequence, which has the potential to contribute to a better understanding of human health and disease.
         </p>
         <p>
           Feel free to reach out by email <b>jsxlei at gmail.com</b> or other social media listed above!

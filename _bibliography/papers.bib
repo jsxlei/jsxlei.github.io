@@ -2,52 +2,127 @@
 ---
 
 
-@ARTICLE{He2024-is,
-  title    = "Deep learning modeling of ribosome profiling reveals regulatory
-              underpinnings of translatome and interprets disease variants",
-  author   = "He\textsuperscript{*}, Jialin and Xiong\textsuperscript{*,#}, Lei and Shi, Shaohui and Li, Chengyu and
-              Chen, Kexuan and Fang, Qianchen and Nan, Jiuhong and Ding, Ke and
-              Li, Jingyun and Mao, Yuanhui and Boix, Carles A and Hu, Xinyang
-              and Kellis, Manolis and Xiong\textsuperscript{#}, Xushen",
-  abstract = "Gene expression involves transcription and translation. Despite
-              large datasets and increasingly powerful methods devoted to
-              calculating genetic variants' effects on transcription,
-              discrepancy between mRNA and protein levels hinders the
-              systematic interpretation of the regulatory effects of
-              disease-associated variants. Accurate models of the sequence
-              determinants of translation are needed to close this gap and to
-              interpret disease-associated variants that act on translation.
-              Here, we present Translatomer, a multimodal transformer framework
-              that predicts cell-type-specific translation from mRNA expression
-              and gene sequence. We train Translatomer on 33 tissues and cell
-              lines, and show that the inclusion of sequence substantially
-              improves the prediction of ribosome profiling signal, indicating
-              that Translatomer captures sequence-dependent translational
-              regulatory information. Translatomer achieves accuracies of 0.72
-              to 0.80 for de novo prediction of cell-type-specific ribosome
-              profiling. We develop an in silico mutagenesis tool to estimate
-              mutational effects on translation and demonstrate that variants
-              associated with translation regulation are evolutionarily
-              constrained, both within the human population and across species.
-              Notably, we identify cell-type-specific translational regulatory
-              mechanisms independent of eQTLs for 3,041 non-coding and
-              synonymous variants associated with complex diseases, including
-              Alzheimer's disease, schizophrenia, and congenital heart disease.
-              Translatomer accurately models the genetic underpinnings of
-              translation, bridging the gap between mRNA and protein levels,
-              and providing valuable mechanistic insights toward mapping
-              ``missing regulation'' in disease genetics. \#\#\# Competing
-              Interest Statement The authors have declared no competing
-              interest.",
-  journal  = "bioRxiv",
-  pages    = "2024.02.26.582217",
-  month    =  mar,
+@ARTICLE{He2024-dn,
+  title     = "Deep learning prediction of ribosome profiling with Translatomer
+               reveals translational regulation and interprets disease variants",
+  author    = "He\textsuperscript{*}, Jialin and Xiong\textsuperscript{*,#}, Lei and Shi, Shaohui and Li, Chengyu and
+               Chen, Kexuan and Fang, Qianchen and Nan, Jiuhong and Ding, Ke and
+               Mao, Yuanhui and Boix, Carles A and Hu, Xinyang and Kellis,
+               Manolis and Li, Jingyun and Xiong\textsuperscript{#}, Xushen",
+  abstract  = "Gene expression involves transcription and translation. Despite large datasets
+             and increasingly powerful methods devoted to calculating genetic variants' effects 
+             on transcription, discrepancy between messenger RNA and protein levels hinders the 
+             systematic interpretation of the regulatory effects of disease-associated variants. 
+             Accurate models of the sequence determinants of translation are needed to close this 
+             gap and to interpret disease-associated variants that act on translation. Here we 
+             present Translatomer, a multimodal transformer framework that predicts cell-type-specific 
+             translation from messenger RNA expression and gene sequence. We train the Translatomer on 
+             33 tissues and cell lines, and show that the inclusion of sequence improves the prediction 
+             of ribosome profiling signal, indicating that the Translatomer captures sequence-dependent 
+             translational regulatory information. The Translatomer achieves accuracies of 0.72 to 0.80 
+             for the de novo prediction of cell-type-specific ribosome profiling. We develop an in silico 
+             mutagenesis tool to estimate mutational effects on translation and demonstrate that variants 
+             associated with translation regulation are evolutionarily constrained, both in the human 
+             population and across species. In particular, we identify cell-type-specific translational 
+             regulatory mechanisms independent of the expression quantitative trait loci for 3,041 
+             non-coding and synonymous variants associated with complex diseases, including Alzheimer's 
+             disease, schizophrenia and congenital heart disease. The Translatomer accurately models the 
+             genetic underpinnings of translation, bridging the gap between messenger RNA and protein 
+             levels as well as providing valuable mechanistic insights for uninterpreted disease variants.",
+  journal   = "Nat. Mach. Intell.",
+  url = "https://www.nature.com/articles/s42256-024-00915-6",
+  code = "https://github.com/jsxlei/Translatomer",
+  img = "/assets/img/publications/Translatomer.png",
+  pdf = "",
+  publisher = "Nature Publishing Group",
+  pages     = "1--16",
+  month     =  oct,
+  year      =  2024,
+}
+
+
+
+
+@ARTICLE{Huang2024-py,
+  title         = "A versatile informative diffusion model for single-cell
+                   {ATAC}-seq data generation and analysis",
+  author        = "Huang\textsuperscript{*}, Lei and Xiong\textsuperscript{*}, Lei and Sun, Na and Liu, Zunpeng and
+                   Wong, Ka-Chun and Kellis, Manolis",
+  journal       = "NeurIPS",
+  abstract      = "The rapid advancement of single-cell ATAC sequencing
+                   (scATAC-seq) technologies holds great promise for
+                   investigating the heterogeneity of epigenetic landscapes at
+                   the cellular level. The amplification process in scATAC-seq
+                   experiments often introduces noise due to dropout events,
+                   which results in extreme sparsity that hinders accurate
+                   analysis. Consequently, there is a significant demand for the
+                   generation of high-quality scATAC-seq data in silico.
+                   Furthermore, current methodologies are typically
+                   task-specific, lacking a versatile framework capable of
+                   handling multiple tasks within a single model. In this work,
+                   we propose ATAC-Diff, a versatile framework, which is based
+                   on a latent diffusion model conditioned on the latent
+                   auxiliary variables to adapt for various tasks. ATAC-Diff is
+                   the first diffusion model for the scATAC-seq data generation
+                   and analysis, composed of auxiliary modules encoding the
+                   latent high-level variables to enable the model to learn the
+                   semantic information to sample high-quality data. Gaussian
+                   Mixture Model (GMM) as the latent prior and auxiliary
+                   decoder, the yield variables reserve the refined genomic
+                   information beneficial for downstream analyses. Another
+                   innovation is the incorporation of mutual information between
+                   observed and hidden variables as a regularization term to
+                   prevent the model from decoupling from latent variables.
+                   Through extensive experiments, we demonstrate that ATAC-Diff
+                   achieves high performance in both generation and analysis
+                   tasks, outperforming state-of-the-art models.",
+  month         =  aug,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "q-bio.GN",
+  language      = "en",
+    url = "",
+  code = "",
+  img = "/assets/img/publications/atac-diff.png",
+}
+
+@ARTICLE{Chen2024-ls,
+  title    = "Tissue-specific silencing of integrated transgenes achieved
+              through endogenous {RNA} interference in Caenorhabditis elegans",
+  author   = "Chen, Siyu and Liu, Weihong and Xiong, Lei and Tao, Zhiju and
+              Zhao, Di",
+  journal  = "RNA Biol.",
+  volume   =  21,
+  number   =  1,
+  pages    = "1--10",
+  abstract = "Transgene silencing is a common phenomenon observed in
+              Caenorhabditis elegans, particularly in the germline, but the
+              precise mechanisms underlying this process remain elusive. Through
+              an analysis of the transcription factors profile of C. elegans, we
+              discovered that the expression of several transgenic reporter
+              lines exhibited tissue-specific silencing, specifically in the
+              intestine of C. elegans. Notably, this silencing could be reversed
+              in mutants defective in endogenous RNA interference (RNAi).
+              Further investigation using knock-in strains revealed that these
+              intestine-silent genes were indeed expressed in vivo, indicating
+              that the organism itself regulates the intestine-specific
+              silencing. This tissue-specific silencing appears to be mediated
+              through the endo-RNAi pathway, with the main factors of this
+              pathway, mut-2 and mut-16, are significantly enriched in the
+              intestine. Additionally, histone modification factors, such as
+              met-2, are involved in this silencing mechanism. Given the crucial
+              role of the intestine in reproduction alongside the germline, the
+              transgene silencing observed in the intestine reflects the
+              self-protective mechanisms employed by the organisms. In summary,
+              our study proposed that compared to other tissues, the transgenic
+              silencing of intestine is specifically regulated by the endo-RNAi
+              pathway.",
+  month    =  jan,
   year     =  2024,
+  keywords = "C. elegans; endo-RNAi; tissue-specific; transgene silencing",
   language = "en",
-   url = {},
-  code = {},
-   img = {/assets/img/publications/Translatomer.png},
-   pdf = {},
+  url = "https://www.tandfonline.com/doi/full/10.1080/15476286.2024.2332856",
+  img = "/assets/img/publications/celegans_rna.png",
 }
 
 
