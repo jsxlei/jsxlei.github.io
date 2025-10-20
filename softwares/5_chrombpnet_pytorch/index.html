@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Lei Xiong | chrombpnet-pytorch</title>
+  <meta name="description" content="">
+
+  <!-- Fonts and Icons -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Helvetica:300,400,500,700|Helvetica:100,300,400,500,700|Material+Icons" />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="/assets/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/academicons.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/softwares/5_chrombpnet_pytorch/">
+</head>
+<body>
+  <!-- Header -->
+  <nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
+    <div class="container-fluid p-0">
+      
+        <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Lei</span> Xiong</a>
+      
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              Home
+              
+            </a>
+          </li>
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Scrolling Progress Bar -->
+  <progress id="progress" value="0">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+
+  <!-- Content -->
+  <div class="content">
+    
+  <h1>chrombpnet-pytorch</h1>
+  <h6>Pytorch implementation for ChromBPNet</h6>
+
+
+<p><a href="https://github.com/jsxlei/chrombpnet-pytorch/stargazers"><img src="https://img.shields.io/github/stars/jsxlei/chrombpnet-pytorch?logo=GitHub&amp;color=yellow" alt="Stars" /></a>
+<a href="https://pypi.org/project/chrombpnet-pytorch"><img src="https://img.shields.io/pypi/v/chrombpnet_pytorch.svg" alt="PyPI" /></a>
+<a href="https://pepy.tech/project/chrombpnet_pytorch"><img src="https://pepy.tech/badge/chrombpnet_pytorch" alt="Downloads" /></a></p>
+
+<h1 id="chrombpnet-pytorch">ChromBPNet Pytorch</h1>
+
+<ul>
+  <li>Pytorch implementation for <a href="https://github.com/kundajelab/chrombpnet">ChromBPNet</a></li>
+  <li>Please refer to original <a href="https://github.com/kundajelab/chrombpnet">code</a> and paper <a href="https://www.biorxiv.org/content/10.1101/2024.12.25.630221v1">ChromBPNet: Bias factorized, base-resolution deep learning models of chromatin accessibility reveal cis-regulatory sequence syntax, transcription factor footprints and regulatory variants</a> by  Anusri Pampari<em>, Anna Shcherbina</em>, Anshul Kundaje. (*authors contributed equally)</li>
+  <li>This repo also refers to <a href="https://github.com/jmschrei/bpnet-lite">bpnet-lite</a> and uses <a href="https://github.com/jmschrei/tangermeme">tangermeme</a> for interpretation, two very useful repos by Jacob Schreiber</li>
+</ul>
+
+<p align="center">
+<img src="ihttps://github.com/jsxlei/chrombpnet-pytorch/blob/main/images/chrombpnet_arch.png" alt="ChromBPNet" align="center" style="width: 800px;" />
+</p>
+
+<h2 id="reproduce-official-chrombpnet-performance">Reproduce Official ChromBPNet performance</h2>
+<h3 id="pearson-correlation-on-counts-prediction-of-peaks">Pearson correlation on counts prediction of peaks</h3>
+<p>official chrombpnet (left) vs pytorch chrombpnet (right)</p>
+<p align="center">
+  <img src="images/peaks.counts_pearsonr_official.png" width="350" />
+  <img src="images/peaks.counts_pearsonr.png" width="350" /> 
+</p>
+
+<h3 id="attribution-score">Attribution score</h3>
+<p>Here is the <a href="https://epigenomegateway.wustl.edu/browser2022/?blob=7Vhdc5s4FP0rGe2rDcaJvY7fupm0zXSbnYk92YedDiPQBVQLiQrhxPXkv_cKMMYOTt1u291p84bQuV_nXF0.1iQGqVK4pimQKUni0wnpkSWHuytpQC.pINM1yQ3VhkzH3vn52XjUIyBZtRqPTh96xGgaLnIy_WdNZOXnphCg0ZFZZXap66WgAaDDZltlhiuJluu9LXRaaLtEUAqGMmqoRc1tpJMdrwjl.QwEhAYwq4iKHHok4gL.Ct5XHuzCpveulSpe83wO91hWbWJwcaFkxGOMhF5pxtvLDwXo1aVkmeISjdYPD72mXA3RK5CwLRhJBSqlMtQW2Kp8i.yofbN5VPV7If4zGnp1B226p0ULboSKwe3p.RHM7IA7yGnt_yz8vH1xfennZU6.5wyOIMlanFQWuHGyrKw62OoC_iy03UAG1Lyl.WJnxpR3083dZp7sgrsmThvRcJQYk.VT113yj0kROHdFboQDrHCzIhA8dG1Srk7zhTd2guDJMdVO7P8wrbacBTy.Q4vWIdSqkMw3ujDJgWO4i1jNQiqsK1oYZddv6T2ZesPBIyJTjtU4.CSRkdKspHKBnuh7cBVduAL4PcaKN_xWpbsaYgnGfTMaD53gbo_m3Q7p7dJe1_b1hJcUNiEQ9687Ggm51FrpWgMb6wVjrbSqAwtsToMryQCZHPSIrRZbsOzUVBk4KQ3bByLTwHwVRTzkVPh0aRU9pHAXtkPmLtiu1t9IYKus2w7k29DPWj.pdZholQYZngw_GnnDz8n9GH5I8cfI7yd6tjJKh4n_EgM9i_5lontDS8fRolfwY0SvkD9oqtvovHxBycvr_UyeG.JQQzQDs8WYPVR.iE9n4.cJzbb9wVYyhw.t_jjOuqNdjjP8LiMDK8Ao0mgeOGW03ImUYH6Kb6vO5fXF7GYynrx89cZpTsPRfVPz80sMkvbMPb5hPmPWNViesviGTxF_J1DVGGWQL5wdv2IP4IT9mh7oNnuqB7osnnvgx_cAprghYw747VpljQ9jJHYGZn99W_4FLJ32vTr6n4D1sb85w68_.0LQIwGKJOAKUyKT0WjIwrNBf3A6CvueFw36k_Fg3A.j4dnZ7zCJzkP7cwfZTdQdl_E1XfKYonZkit.TWE2zc3vTVCjoShWWDhILFdT_IzPBDf6enPGPyDQmYWiACb8GykC_Bh4naNDcRm5m.NzImg0kdut185WubK9wW8ZvHl6FCRdMgyz_atYYdJeDaWD29fgAbIOhmT0b9cH7A2Pk5V.IUKWZkmBVriEgaSDgQqgckWXlVi2KL0dLvGHZeXiHaQd4NECXQuEqwXqEralWjlG9mCdgg1UuPgE-">genome browser</a> to compare the profile prediction and attribution scores between official ChromBPNet and pytorch implementation with n_filters = 512 and 128</p>
+<p align="center">
+&lt;img src="images/genome_brower.png" alt="genome_browser", align="center" style="width: 1200px;"/&gt;
+</p>
+
+<h2 id="table-of-contents">Table of contents</h2>
+
+<ul>
+  <li><a href="#installation">Installation</a></li>
+  <li><a href="#quickstart">QuickStart</a></li>
+  <li><a href="#how-to-cite">How-to-cite</a></li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<h4 id="install-from-pypi">Install from pypi</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pip install chrombpnet-pytorch
+</code></pre>
+</div>
+<h4 id="install-from-source">Install from source</h4>
+<div class="highlighter-rouge"><pre class="highlight"><code>pip install git+https://github.com/jsxlei/chrombpnet-pytorch.git
+</code></pre>
+</div>
+
+<h2 id="quickstart">QuickStart</h2>
+<h3 id="before-training">Before training</h3>
+<ul>
+  <li>Download the <a href="https://zenodo.org/records/12193595">genome</a> or use your own genome data</li>
+  <li>Download the <a href="https://zenodo.org/records/15713376">ENCODE K562 ATAC data</a> or use your own ATAC data</li>
+</ul>
+
+<h3 id="bias-factorized-chrombpnet-training">Bias-factorized ChromBPNet training</h3>
+<p>Please refer to <a href="https://github.com/kundajelab/chrombpnet-pytorch/chrombpnet/data_config.py">data_config</a> to define your own dataset or pass them through command.</p>
+
+<p>if your <data_path> contains: peaks.bed, negatives.bed, and unstranded.bw, and bias_scaled.h5 as well.</data_path></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>chrombpnet train --data_dir &lt;data_path&gt;
+</code></pre>
+</div>
+<p>Otherwise</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>chrombpnet train --peaks &lt;peak_file&gt; --negatives &lt;negative_file&gt; --bigwig &lt;unstrand.bw&gt; --bias &lt;bias_scaled.h5&gt; --adjust_bias
+</code></pre>
+</div>
+
+<h3 id="predict-with-pretrained-model-in-h5-format-or-cpkt-or-pt">Predict with pretrained model in .h5 format or .cpkt or .pt</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>chrombpnet predict --data_dir &lt;data_path&gt; --checkpoint chrombpnet_wo_bias.h5/best_model.cpkt/chrombpnet_wo_bias.pt -o &lt;output_path&gt;
+</code></pre>
+</div>
+
+<h3 id="interpret-by-calculating-attribution">Interpret by calculating attribution</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>chrombpnet interpret --data_dir &lt;data_path&gt; --checkpoint &lt;model_cpkt/model_h5&gt; -o &lt;output_path&gt;
+</code></pre>
+</div>
+
+<h3 id="run-full-pipeline-including-training-predicting-and-interpreting">Run full pipeline including training, predicting and interpreting</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>chrombpnet --data_dir &lt;data_path&gt; -o &lt;output_path&gt;
+</code></pre>
+</div>
+
+<h3 id="finetune-model">Finetune model</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>chrombpnet finetune --data_dir &lt;data_path&gt; --checkpoint &lt;model&gt;.h5/pt -o &lt;output_path&gt;
+</code></pre>
+</div>
+
+<h3 id="variant-scoring">Variant scoring</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>snp_score 
+ 	-l $snps \
+ 	-g $ref_fasta \
+ 	-pg $ref_fasta_peaks \
+ 	-s $chrom_sizes \
+ 	-ps $chrom_sizes_peaks \
+ 	-m $model \
+ 	-p $peaks \
+ 	-o $out_prefix \
+ 	-t 2 \
+ 	-li \
+ 	-sc chrombpnet
+</code></pre>
+</div>
+<h4 id="input-format">Input Format</h4>
+
+<ul>
+  <li><code class="highlighter-rouge">--bigwig</code></li>
+  <li><code class="highlighter-rouge">--peaks</code></li>
+  <li><code class="highlighter-rouge">--negatives</code></li>
+</ul>
+
+<h4 id="output-format">Output Format</h4>
+
+<p>The ouput directory will be populated as follows with fold_0 chromosome splits -</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>fold_0\
+	checkpoints\
+		best_model.cpkt
+		last.cpkt
+		chrombpnet_nobias.pt (pytorch i.e model to predict bias corrected accessibility profile) 
+	train.log
+	predict.log
+	evaluation\
+		eval\
+			all_regions.counts_pearsonr.png
+			all_regions_jsd.profile_jsd.png  
+			peaks.counts_pearsonr.png  
+			peaks_jsd.profile_jsd.png  
+			regions.csv
+			metrics.json
+	interpret\
+		counts\
+
+
+
+</code></pre>
+</div>
+
+<h2 id="how-to-cite">How to Cite</h2>
+
+<p>If you’re using ChromBPNet in your work, please cite as follows:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>@article {Pampari2024.12.25.630221,
+	author = {Pampari, Anusri and Shcherbina, Anna and Kvon, Evgeny and Kosicki, Michael and Nair, Surag and Kundu, Soumya and Kathiria, Arwa S. and Risca, Viviana I. and Kuningas, Kristiina and Alasoo, Kaur and Greenleaf, William James and Pennacchio, Len A. and Kundaje, Anshul},
+	title = {ChromBPNet: bias factorized, base-resolution deep learning models of chromatin accessibility reveal cis-regulatory sequence syntax, transcription factor footprints and regulatory variants},
+	elocation-id = {2024.12.25.630221},
+	year = {2024},
+	doi = {10.1101/2024.12.25.630221},
+	publisher = {Cold Spring Harbor Laboratory},
+	URL = {https://www.biorxiv.org/content/early/2024/12/25/2024.12.25.630221},
+	eprint = {https://www.biorxiv.org/content/early/2024/12/25/2024.12.25.630221.full.pdf},
+	journal = {bioRxiv}
+}
+</code></pre>
+</div>
+
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; Copyright 2025 Lei Xiong.
+    
+    
+  </footer>
+
+  <!-- Core JavaScript Files -->
+  <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/assets/js/popper.min.js" type="text/javascript"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/assets/js/mdb.min.js" type="text/javascript"></script>
+  <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="/assets/js/common.js"></script>
+
+  <!-- Scrolling Progress Bar -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var navbarHeight = $('#navbar').outerHeight(true);
+      $('body').css({ 'padding-top': navbarHeight });
+      $('progress-container').css({ 'padding-top': navbarHeight });
+      var progressBar = $('#progress');
+      progressBar.css({ 'top': navbarHeight });
+      var getMax = function() { return $(document).height() - $(window).height(); }
+      var getValue = function() { return $(window).scrollTop(); }   
+      // Check if the browser supports the progress element.
+      if ('max' in document.createElement('progress')) {
+        // Set the 'max' attribute for the first time.
+        progressBar.attr({ max: getMax() });
+        progressBar.attr({ value: getValue() });
+    
+        $(document).on('scroll', function() {
+          // On scroll only the 'value' attribute needs to be calculated.
+          progressBar.attr({ value: getValue() });
+        });
+
+        $(window).resize(function() {
+          var navbarHeight = $('#navbar').outerHeight(true);
+          $('body').css({ 'padding-top': navbarHeight });
+          $('progress-container').css({ 'padding-top': navbarHeight });
+          progressBar.css({ 'top': navbarHeight });
+          // On resize, both the 'max' and 'value' attributes need to be calculated.
+          progressBar.attr({ max: getMax(), value: getValue() });
+        });
+      } else {
+        var max = getMax(), value, width;
+        var getWidth = function() {
+          // Calculate the window width as a percentage.
+          value = getValue();
+          width = (value/max) * 100;
+          width = width + '%';
+          return width;
+        }
+        var setWidth = function() { progressBar.css({ width: getWidth() }); };
+        setWidth();
+        $(document).on('scroll', setWidth);
+        $(window).on('resize', function() {
+          // Need to reset the 'max' attribute.
+          max = getMax();
+          setWidth();
+        });
+      }
+    });
+  </script>
+
+  <!-- Code Syntax Highlighting -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <script src="/assets/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <!-- Script Used for Randomizing the Projects Order -->
+  <!-- <script type="text/javascript">
+    $.fn.shuffleChildren = function() {
+      $.each(this.get(), function(index, el) {
+        var $el = $(el);
+        var $find = $el.children();
+
+        $find.sort(function() {
+          return 0.5 - Math.random();
+        });
+
+        $el.empty();
+        $find.appendTo($el);
+      });
+    };
+    $("#projects").shuffleChildren();
+  </script> -->
+
+  <!-- Project Cards Layout -->
+  <script type="text/javascript">
+    var $grid = $('#projects');
+
+    // $grid.masonry({ percentPosition: true });
+    // $grid.masonry('layout');
+
+    // Trigger after images load.
+    $grid.imagesLoaded().progress(function() {
+      $grid.masonry({ percentPosition: true });
+      $grid.masonry('layout');
+    });
+  </script>
+
+  <!-- Enable Tooltips -->
+  <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-197596889-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+    
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXQXWK2E6C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZXQXWK2E6C');
+  </script>
+    
+  <!-- Baidu Tongji -->  
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?fc5a69a8465cb0fd34201c2fab055fc4";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+</body>
+</html>
