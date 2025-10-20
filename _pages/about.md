@@ -3,7 +3,7 @@ layout: page
 permalink: /
 title: about
 nav: about
-years: [2024, 2023, 2022, 2019, 2015]
+years: [2025, 2024, 2023, 2022, 2019, 2015]
 ---
 
 <!-- Introduction -->
@@ -30,7 +30,10 @@ years: [2024, 2023, 2022, 2019, 2015]
             <b>Stanford University </b> <br>
           </p>
         <p> 
-My research interests are centered on the development and application of innovative deep learning approaches to solve complex biological questions, with a primary focus on advancing our understanding of gene regulation and cellular diversity. To achieve this goal, I build models that can effectively capture and interpret complex features from biological datasets, which provides new insights into fundamental biological processes. Specifically, I will <b>Decipher Mechanisms of Macrophage Dynamics and Cellular Crosstalk in Cancer</b>. Through my work, I aim to drive significant advances in the field of single-cell multiomics and regulatory DNA sequence, which has the potential to contribute to a better understanding of human health and disease.
+Long-range cis-regulatory interactions (LRIs) spanning tens to hundreds of kilobases enable tissue-specific enhancers to coordinate complex gene expression programs essential for precise spatiotemporal control in development, cell differentiation, and disease. Systematically linking distal regulatory elements to their target genes remains a critical bottleneck limiting translation of GWAS discoveries into mechanistic insights and therapeutic strategies.
+The central goal of this proposal is to develop interpretable deep learning models that decode long-range regulatory syntax and predict the causal impact of distal noncoding elements and variants on chromatin state and gene expression. Using CAD (Coronary Artery Disease) macrophages as a model system, I will develop and test a generalizable framework for identifying long-range regulatory circuits and understand their role in CAD. Central Hypothesis: Long-range gene regulation is governed by a learnable sequence syntax, and disruption of this syntax by distal noncoding variants contributes to complex disease through dysregulation of enhancer-promoter communication.
+
+
         </p>
         <p>
           Feel free to reach out by email <b>jsxlei at gmail.com</b> or other social media listed above!
