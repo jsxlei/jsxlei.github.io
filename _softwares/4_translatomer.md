@@ -3,7 +3,7 @@ layout: page
 title: Translatomer
 description: predicting ribosome profiling reveals translational regulation and interprets disease variants
 github: Translatomer
-img: /assets/img/publications/translatomer.png
+img: /assets/img/publications/Translatomer.png
 ---
 
 # Translatomer
